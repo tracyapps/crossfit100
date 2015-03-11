@@ -1,0 +1,83 @@
+/* colors */
+$mainBGcolor: #a5a5a5;
+$lightBGColor: #edecce;
+$lightBGTextColor: #353535;
+$darkBGColor: rgba(0,0,0,0.7);
+$darkBGTextColor: #fff;
+
+$linkColor: #fffc00;
+$linkHoverColor: #b1f9ff;
+
+$lightBGtop: #ebebeb;
+$lightBGbottom: #bdbdbd;
+
+$darkBGtop: rgba(0,0,0,0.3);
+$darkBGbottom: rgba(0,0,0,0.5);
+
+$highlightLine: rgba(255,255,255,0.4);
+
+$redBG: rgba(192,1,6,0.7);
+$redBGhover: darken($redBG, 10%);
+
+/* "faded" colors, for meta and secondary sections */
+$fadedLightBGTextColor: darken($lightBGTextColor, 30%);
+$fadedDarkBGTextColor: lighten($darkBGTextColor, 30%);
+$fadedLinkColor: darken($linkColor, 30%);
+$fadedLinkHoverColor: darken($linkHoverColor, 30%);
+
+/* boders, widths, ets */
+$borderRadius:1px;
+
+$container: 1320px;
+
+
+/* mixins */
+@mixin lightGradient {
+    background: $lightBGtop; 
+    background: -moz-linear-gradient(top,  $lightBGtop 0%, $lightBGbottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$lightBGtop), color-stop(100%,$lightBGbottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $lightBGtop 0%$lightBGbottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $lightBGtop 0%,$lightBGbottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $lightBGtop 0%,$lightBGbottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $lightBGtop 0%,$lightBGbottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$lightBGtop', endColorstr='$lightBGbottom',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin darkGradient {
+    background: $darkBGbottom; 
+    background: -moz-linear-gradient(top,  $darkBGtop 0%, $darkBGbottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$darkBGtop), color-stop(100%,$darkBGbottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $darkBGtop 0%,$darkBGbottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $darkBGtop 0%,$darkBGbottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $darkBGtop 0%,$darkBGbottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $darkBGtop 0%,$darkBGbottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$darkBGtop', endColorstr='$darkBGbottom',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin darkTextShadow {
+    text-shadow: 0px -1px 0px #000000; filter: dropshadow(color=#000000, offx=0, offy=-1);
+}
+@mixin lightTextShadow {
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7); filter: dropshadow(color=#5d5d5d, offx=0, offy=1);
+}
+
+@mixin mediumTextShadow {
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.5); filter: dropshadow(color=#faf9f3, offx=0, offy=-1);
+}
+
+@mixin blurshadow {
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4); box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+@mixin smallshadow {
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4); box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+@mixin featuredimagestyle {
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.8); box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.8); border:4px solid $darkBGTextColor;
+}
+
+@mixin thumbnailstyle {
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4); box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4); border:1px solid $darkBGTextColor;
+}

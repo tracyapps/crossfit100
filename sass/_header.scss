@@ -1,0 +1,51 @@
+#mainHeader,
+#stickyHeaderContainer {
+	nav {font-family: 'Roboto Condensed'; font-weight:700;  margin:0px; min-height:3.5em; padding:0.8em 25px; vertical-align: middle;
+		ul {margin:0px; padding:0px;}
+		li {list-style-type:none; margin:0px; padding:0px; display:inline-block;
+			a, 
+			a:visited {color:#fff; text-decoration:none;text-transform: none; padding:5px 15px; @include darkTextShadow; font-size:1.2em; display: block;}
+			a:hover, 
+			a:visited:hover,
+			a:focus {color:$linkColor;}
+		}
+		.active a,
+		.active a:visited {color:$linkColor; }
+	}
+}
+
+#mainHeader {position: absolute; top:2%; left:0px; width:100%; z-index: 1000; height:150px; text-align: center;
+	.logo { width:auto; margin:10px auto; float:none; position: relative; overflow:visible; display:inline-block;
+		a {text-decoration:none; z-index: 1000;}
+		h1 {font-size:65px; color:#fff; @include darkTextShadow; text-decoration:none;text-transform: none; overflow:visible; 
+			.word2 {color:$linkColor; margin-left:-0.1em;}
+		}
+		.bull {position: absolute; width:173px; height:113px; background: url('images/bull.png') no-repeat 0px 0px; z-index: 1; top: -42px; left: -115px;}
+	}
+	nav {background: $darkBGColor;}
+}
+#stickyHeaderContainer {position: fixed; top:-85px; height: 55px; margin-bottom:-55px; width: 100%; z-index:1000; background: $darkBGColor; overflow:visible;
+	.smallerLogo {
+		width:200px; margin:5px 0px 0px 0px; float:left; position: relative; overflow:visible; display:inline-block;
+		a {text-decoration:none; z-index: 1000;}
+		h1 {font-size:35px; color:#fff; @include darkTextShadow; text-decoration:none;text-transform: none; overflow:visible; 
+			.word2 {color:$linkColor; margin-left:-0.1em;}
+		}
+		.bull {position: absolute; width:173px; height:113px; background: url('images/bull.png') no-repeat 0px 0px; z-index: 1; top: -50px; left: -110px; margin:0px -10px -20px -10px;}
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+
+	.home #mainHeader nav {display:none;}
+}
+
+@media screen and (max-width: 600px) {
+	#mainHeader .logo h1 {font-size:55px;}
+}
+
+@media screen and (max-width: 480px) {
+	#mainHeader .logo h1 {font-size:35px;}
+}
+

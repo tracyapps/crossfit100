@@ -1,0 +1,42 @@
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+
+/* ------- widgets --*/
+.widget {
+	margin: 0 0 1.5em;
+	.instagram {width:100%; display:block; height:auto; min-height:350px;
+		.photo {width: 20%; float:left; padding:3px;
+			img {width: 100%; height: auto;}
+		}
+	}
+}
+.widget.social .oneThird {
+	.widget_text {margin:0px;}
+	.widget_facebook_likebox {margin-top:3px;}
+}
+
+
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+.widgetBox { margin:20px 0px;
+	* {max-width:100%;}
+	.button {display:block; margin:1em 0px;}
+}
+
+//special styles for the facebook like box
+.fb-like-box {margin: 30px 0px; background: rgba(255,255,255,0.6);}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+
+// footer widgets
+

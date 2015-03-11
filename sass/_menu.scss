@@ -1,0 +1,17 @@
+
+h1.menu-toggle {font-size:15px; font-weight:300; margin:0px; padding:0px; text-align: center;}
+
+/* mobile menu */
+.menu-toggle {display: none; cursor: pointer;}
+
+@media screen and (max-width: 850px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {display: block; text-align: center;}
+	h1.menu-toggle {margin:0px; padding:5px 0px; color:$darkBGTextColor; @include darkTextShadow;}
+
+	.main-navigation ul {display: none;}
+		.home .main-navigation ul {background: $darkBGColor;  margin-top:-1px;}
+	header nav .container {padding:0px;}
+	.menu-main-menu-container {margin:18px 0px 10px 0px;}
+	#stickyHeaderContainer nav li {display:inline-block; padding:8px 0px;}
+}

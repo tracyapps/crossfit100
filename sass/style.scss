@@ -1,0 +1,22 @@
+/*!
+Theme Name: cf100
+Theme URI: http://crossfit100.com
+Author: tracy apps design, LLC
+Author URI: http://tracyappsdesign.com
+Description: Custom theme for CrossFit 100
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: cf100
+Tags: custom, responsive
+*/
+
+@import "vars";
+@import "reset";
+@import "global";
+@import "header";
+@import "menu";
+@import "content";
+@import "sidebars";
+@import "footer";
+@import "grid";

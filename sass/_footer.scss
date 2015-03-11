@@ -1,0 +1,14 @@
+
+footer {
+	nav {padding: 20px 0px;
+		a,
+		a:visited {padding:10px 5px; margin: 0px 10px; color: $darkBGTextColor;}
+		a:hover,
+		a:visited:hover,
+		a:focus {color: $linkColor}
+		ul, li {list-style-type:none; margin:0px; padding:0px; display: inline;	}
+		li {border-left:1px solid $darkBGTextColor;}
+		li:first-child {border-left:none;}
+	}
+	.credit {margin:20px 0px;}
+}
