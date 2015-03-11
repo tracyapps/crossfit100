@@ -147,7 +147,7 @@ get_header(); ?>
 		<div id="latest-news" class="container latestnews">
 			<h2 class="pageTitle">Latest news</h2><br />
 				<section id="masonry" class="js-masonry">
-				<?php query_posts('post_type=post&showposts=20&orderby=date&order=DEC'); ?>
+				<?php query_posts('post_type=post&showposts=9&orderby=date&order=DEC'); ?>
 					<?php while (have_posts()) : the_post(); ?>
 						<?php get_template_part( 'content') ?>
 					<?php endwhile; ?>
