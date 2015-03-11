@@ -22,7 +22,27 @@
 		}
 		.bull {position: absolute; width:173px; height:113px; background: url('images/bull.png') no-repeat 0px 0px; z-index: 1; top: -42px; left: -115px;}
 	}
-	nav {background: $darkBGColor;}
+	.header-contact-info {
+		position: absolute;
+		top: 13px;
+		right: 2%;
+		text-align: left;
+		padding-right: 10px;
+		font-weight: bold;
+		line-height: 1.2em;
+		@include darkTextShadow;
+		address {
+			margin: 0;
+			font-weight: normal;
+		}
+	}
+	nav {
+		background: $darkBGColor;
+		.nav-phone-number {
+			color: rgba(255, 255, 255, 0.6);
+			float: right;
+		}
+	}
 }
 #stickyHeaderContainer {position: fixed; top:-85px; height: 55px; margin-bottom:-55px; width: 100%; z-index:1000; background: $darkBGColor; overflow:visible;
 	.smallerLogo {

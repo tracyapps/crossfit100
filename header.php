@@ -71,6 +71,13 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title word_split"><?php bloginfo( 'name' ); ?></h1></a>
 			<div class="bull"></div>
 		</div>
+		<div class="header-contact-info">
+			<address>
+				4927 N Lydell Ave<br />
+				Glendale, WI 53217
+			</address>
+			414-313-1427
+		</div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'cf100' ); ?></h1>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
