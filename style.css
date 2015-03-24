@@ -739,15 +739,15 @@ h1.menu-toggle {
     background-size: cover !important;
     background-position: center !important; }
     .banner li .slidetextBG {
-      margin-top: 24%;
+      margin-top: 20%;
       background: rgba(0, 0, 0, 0.55);
       display: block;
       text-align: center; }
       .banner li .slidetextBG h1 {
-        font-size: 65px;
+        font-size: 56px;
         text-shadow: 0px -1px 0px #000000;
         filter: dropshadow(color=#000000, offx=0, offy=-1);
-        padding: 40px 20px;
+        padding: 15px 20px;
         line-height: 1.1em; }
         .banner li .slidetextBG h1 strong, .banner li .slidetextBG h1 b, .banner li .slidetextBG h1 i, .banner li .slidetextBG h1 em, .banner li .slidetextBG h1 span {
           color: #fffc00; }
@@ -755,7 +755,7 @@ h1.menu-toggle {
 .homeWidgets {
   position: absolute;
   z-index: 900;
-  top: 80%;
+  top: 60%;
   left: 0px; }
 
 .break {
@@ -806,13 +806,13 @@ h1.menu-toggle {
 
 @media screen and (max-width: 600px) {
   .banner li .slidetextBG h1 {
-    font-size: 50px;
-    padding: 22px 0px; }
+    font-size: 40px;
+    padding: 12px 0px; }
 
   .homeWidgets {
     position: relative;
     z-index: 900;
-    margin-top: -50%; } }
+    margin-top: -75%; } }
 @media screen and (max-width: 480px) {
   .banner li .slidetextBG {
     margin-top: 20%; }

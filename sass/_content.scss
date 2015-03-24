@@ -3,14 +3,14 @@
 .banner {margin:0px; padding:0px; position: relative; overflow: auto;
 	ul, li {margin:0px; padding:0px; list-style-type:none;}
 	li {min-height:100%;height:auto;float: left; background-size:contain !important; background-size:cover !important;background-position:center !important;
-		.slidetextBG {margin-top:24%; background: rgba(0,0,0,0.55); display: block; text-align: center;
-			h1 {font-size:65px; @include darkTextShadow; padding:40px 20px; line-height:1.1em;
+		.slidetextBG {margin-top:20%; background: rgba(0,0,0,0.55); display: block; text-align: center;
+			h1 {font-size:56px; @include darkTextShadow; padding:15px 20px; line-height:1.1em;
 				strong, b, i, em, span {color:$linkColor;}
 			}
 		}
 	}
 }
-.homeWidgets {position: absolute; z-index: 900; top:80%; left:0px;}
+.homeWidgets {position: absolute; z-index: 900; top:60%; left:0px;}
 
 .break {height:auto; width:100%; @include lightGradient; padding: 55px 20px 150px 20px; margin: 0px; color:$lightBGTextColor; @include blurshadow;
 	.darkOverlay {background:none;}
@@ -26,9 +26,9 @@
 
 @media screen and (max-width: 600px) {
 	.banner li .slidetextBG { 
-		h1 {font-size: 50px; padding: 22px 0px;}
+		h1 {font-size: 40px; padding: 12px 0px;}
 	}
-	.homeWidgets {position: relative; z-index: 900; margin-top:-50%;}
+	.homeWidgets {position: relative; z-index: 900; margin-top:-75%;}
 }
 
 @media screen and (max-width: 480px) {
