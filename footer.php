@@ -70,6 +70,7 @@
 		  itemSelector: '.post'
 		});
 	</script>
+
 <?php if(is_front_page()) { ?>
 		<script src="//unslider.com/unslider.min.js"></script>
 		<script>

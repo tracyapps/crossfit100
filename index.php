@@ -19,13 +19,13 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<section id="masonry" class="js-masonry">
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'post' ); ?>
+				<?php get_template_part( 'content', 'news' ); ?>
 
 			<?php endwhile; ?>
-			</section>
+
 			<?php cf100_paging_nav(); ?>
 
 		<?php else : ?>

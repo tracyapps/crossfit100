@@ -492,7 +492,7 @@ function content($limit) {
   } else {
     $content = implode(" ",$content);
   }
-  $content = preg_replace('/[.+]/','', $content);
+  $content = preg_replace('/[+]/','', $content);
   $content = apply_filters('the_content', $content);
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
@@ -502,11 +502,14 @@ function hybridexcerpt($limit) {
   $hybridexcerpt = explode(' ', get_the_content(), $limit);
   if (count($hybridexcerpt)>=$limit) {
     array_pop($hybridexcerpt);
-    $hybridexcerpt = implode(" ",$hybridexcerpt).' <a class="readmore" href="<?php echo get_permalink(); ?>">Continue reading&nbsp;&raquo;</a>';
+		$hybridexcerpt = implode(" ",$hybridexcerpt);
+		$hybridexcerpt .= '... &nbsp; <a class="readmore" href="';
+		$hybridexcerpt .= get_permalink();
+		$hybridexcerpt .= '">More&nbsp;&raquo;</a>';
   } else {
     $hybridexcerpt = implode(" ",$hybridexcerpt);
   }
-  $hybridexcerpt = preg_replace('/[.+]/','', $hybridexcerpt);
+  $hybridexcerpt = preg_replace('/[+]/','', $hybridexcerpt);
   $hybridexcerpt = apply_filters('the_content', $hybridexcerpt);
   $hybridexcerpt = strip_tags($hybridexcerpt, '<p><a><b><br /><li><ol><ul>');
   return $hybridexcerpt;
