@@ -53,6 +53,19 @@
 		    });
 		
 		});
+
+		$("#latestNewsContainer .entry-content .post-thumbnail-container img").each(function() {
+			if (this.complete) {
+				// img already loaded successfully, show it
+				$(this).closest(".post-thumbnail-container").show();
+			} else {
+				// not loaded yet so install a .load handler to see if it loads
+				$(this).load(function() {
+					// loaded successfully so show it
+					$(this).closest(".post-thumbnail-container").show();
+				});
+			}
+		});
 	</script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.lettering.js"></script>
 	<script>

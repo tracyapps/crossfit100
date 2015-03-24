@@ -75,12 +75,13 @@
 		.post-thumbnail-container {
 			float:right;
 			margin: -18px -33px 10px 15px;
-
 			padding: 4px 4px 0px 4px;
+			display: none;
 			img {
 				@include blurshadow;
 				margin:0;
 				padding:0;
+
 			}
 		}
 	}

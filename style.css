@@ -891,7 +891,8 @@ h1.menu-toggle {
   #latest-news .entry-content .post-thumbnail-container {
     float: right;
     margin: -18px -33px 10px 15px;
-    padding: 4px 4px 0px 4px; }
+    padding: 4px 4px 0px 4px;
+    display: none; }
     #latestNewsContainer .entry-content .post-thumbnail-container img,
     #latest-news .entry-content .post-thumbnail-container img {
       -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
