@@ -936,7 +936,9 @@ h1.menu-toggle {
   .entry-meta a:focus {
     color: #18edff; }
 
-.post.type-post .entry-meta {
+.blog .post.type-post .entry-meta,
+.single .post.type-post .entry-meta,
+.archive .post.type-post .entry-meta {
   background: rgba(0, 0, 0, 0.7);
   padding: 3px 5px;
   display: inline-block;
@@ -966,6 +968,8 @@ div#page main {
 
 article {
   position: relative; }
+  article .pageTitle {
+    display: block; }
 
 .pageTitle {
   background: rgba(0, 0, 0, 0.7);

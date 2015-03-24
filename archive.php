@@ -77,7 +77,6 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 		<main class="twoThirds">
-			<section id="masonry" class="js-masonry">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				
@@ -90,7 +89,6 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-				</section>
 
 			<?php cf100_paging_nav(); ?>
 
