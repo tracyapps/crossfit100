@@ -936,6 +936,12 @@ h1.menu-toggle {
   .entry-meta a:focus {
     color: #18edff; }
 
+.post.type-post .entry-meta {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3px 5px;
+  display: inline-block;
+  margin-bottom: 1em; }
+
 .top-meta {
   margin: -20px 0px 10px 0px;
   text-align: right; }
@@ -967,6 +973,13 @@ article {
   padding: 16px 12px 12px 12px;
   display: inline-table;
   color: #fff; }
+
+.postTitle {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.4em;
+  line-height: 1em;
+  padding: 10px 5px 5px 5px;
+  margin-top: 3.2em; }
 
 .childpage {
   width: 24%;

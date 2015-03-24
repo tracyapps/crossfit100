@@ -108,6 +108,12 @@
 	a:visited:hover,
 	a:focus {color:$fadedLinkHoverColor;}
 }
+.post.type-post .entry-meta {
+	background: $darkBGColor;
+	padding:3px 5px;
+	display: inline-block;
+	margin-bottom: 1em;
+}
 .top-meta {margin: -20px 0px 10px 0px; text-align:right;}
 footer.entry-meta {text-align: right;}
 
@@ -123,6 +129,7 @@ div#page {
 }
 article {position: relative;}
 .pageTitle {background: $darkBGColor; margin:20px 0px;padding: 16px 12px 12px 12px; display: inline-table; color:#fff;}
+.postTitle {background: $darkBGColor; font-size:1.4em; line-height: 1em; padding:10px 5px 5px 5px; margin-top: 3.2em;}
 
 .childpage {width:24%; float:left; margin-right:1%; text-align: center; padding:4px;
 	img {width:100%;}
