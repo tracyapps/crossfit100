@@ -845,7 +845,7 @@ h1.menu-toggle {
 /* ----- post archive / list styles -- */
 #latestNewsContainer,
 #latest-news {
-  padding-top: 125px; }
+  padding-top: 25px; }
   #latestNewsContainer main .pageTitle,
   #latest-news main .pageTitle {
     font-size: 1.4em;
@@ -901,6 +901,13 @@ h1.menu-toggle {
   #latestNewsContainer .category-wods,
   #latest-news .category-wods {
     margin-bottom: 2em; }
+
+#latestNewsContainer {
+  padding-top: 145px; }
+
+.break #latest-news article.category-wods .pageTitle {
+  background-image: url("images/Grey_Lines.png");
+  padding: 5px 3px; }
 
 .thumbnailImage {
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);

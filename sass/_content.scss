@@ -53,7 +53,7 @@
 /* ----- post archive / list styles -- */
 #latestNewsContainer,
 #latest-news {
-	padding-top:125px;
+	padding-top: 25px;
 	main .pageTitle {
 		font-size:1.4em; margin:0px; padding:0px; background: none; text-transform: none;
 		a,
@@ -86,6 +86,17 @@
 		}
 	}
 	.category-wods {margin-bottom:2em;}
+}
+#latestNewsContainer {
+	padding-top: 145px;
+}
+.break #latest-news {
+	article.category-wods {
+		.pageTitle {
+			background-image:url('images/Grey_Lines.png');
+			padding: 5px 3px;
+		}
+	}
 }
 
 
