@@ -148,6 +148,13 @@ article {
 		display: block;
 	}
 }
+
+.marginTop {
+	margin-top: 3em;
+	&.oneHalf {
+		margin-top: 3em;
+	}
+}
 .pageTitle {background: $darkBGColor; margin:20px 0px;padding: 16px 12px 12px 12px; display: inline-table; color:#fff;}
 .postTitle {background: $darkBGColor; font-size:1.4em; line-height: 1em; padding:10px 5px 5px 5px; margin-top: 3.2em;}
 
