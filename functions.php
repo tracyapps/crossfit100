@@ -42,7 +42,8 @@ function cf100_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'cf100' ),
+		'primary' => __( 'Main menu for homepage', 'cf100' ),
+		'secondary' => __( 'Main menu for inside pages', 'cf100' ),
 	) );
 
 	// Enable support for Post Formats.

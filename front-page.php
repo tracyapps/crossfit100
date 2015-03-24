@@ -154,6 +154,7 @@ get_header(); ?>
 				</section>
 		</div>
 		<br clear="all" />
+		<?php echo '<a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '" class="button">View all news</a>'; ?>
 	</div><!--/break-->
 <?php wp_reset_query(); ?>
 	<?php 

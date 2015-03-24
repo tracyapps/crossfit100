@@ -51,7 +51,7 @@
 
 <body <?php body_class(); ?>>
 <div id="top" class="hfeed site">
-<?php if(is_front_page()) { //only load the sticky header on the home page ?>
+<?php if( is_front_page() ) { //only load the sticky header on the home page ?>
 	<div id="stickyHeaderContainer">
 		<div id="headerSlideContent" class="container">
 			<div class="smallerLogo">
@@ -80,7 +80,12 @@
 		</div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'cf100' ); ?></h1>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+				<?php if ( is_front_page() ) {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );
+				} else {
+					wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) );
+				}
+				?>
 			</nav><!-- #site-navigation -->
 	</header><!-- #mainHeader -->
 

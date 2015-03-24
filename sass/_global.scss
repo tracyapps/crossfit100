@@ -142,7 +142,7 @@ button,
 a.button,
 a.button:visited,
 input[type="reset"],
-input[type="submit"] {border-radius:$borderRadius; background: $redBG; color: $darkBGTextColor; display:block; width:100%; clear:both; text-align: center; text-decoration: none; padding:0.5em 1.5em;  border-radius:$borderRadius; border-top:1px solid rgba(255,255,255,0.2); border-left:1px solid rgba(255,255,255,0.1); border-bottom:1px solid rgba(0,0,0,0.4); border-right:1px solid rgba(0,0,0,0.2); @include blurshadow; @include darkTextShadow; font-size: 2.3em; font-size: 2.3rem; line-height:1em; text-transform: uppercase; font-weight: 700; -webkit-appearance: button; cursor: pointer;}
+input[type="submit"] {border-radius:$borderRadius; background: $redBG; color: $darkBGTextColor; display:block; width:100%; clear:both; margin:0.5em 0; text-align: center; text-decoration: none; padding:0.5em 1.5em;  border-radius:$borderRadius; border-top:1px solid rgba(255,255,255,0.2); border-left:1px solid rgba(255,255,255,0.1); border-bottom:1px solid rgba(0,0,0,0.4); border-right:1px solid rgba(0,0,0,0.2); @include blurshadow; @include darkTextShadow; font-size: 2.3em; font-size: 2.3rem; line-height:1em; text-transform: uppercase; font-weight: 700;}
 
 button:hover,
 .button:hover,
